@@ -1,0 +1,17 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    background-color: lightpink;
+    outline: 1px solid;
+    text-align: center;
+
+} 
+.icon{
+    height: 50px;
+    width: 50px;
+    background-color: yellowgreen;
+    transform: rotate(45deg);
+    margin: 15px;
+}

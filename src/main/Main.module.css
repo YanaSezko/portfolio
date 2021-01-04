@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: coral;
+    outline: 1px solid ;
+}
+.info{
+    width: 280px;
+    background-color: rgb(140, 157, 189);
+}
+.photo{
+    width: 280px;
+    height: 400px;
+    background-color:  rgb(140, 157, 189);
+    outline: 1px solid;
+}
+@media (max-width: 700px) {
+    .main{ justify-content: center;}
+ }

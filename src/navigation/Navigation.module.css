@@ -1,0 +1,9 @@
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    min-width: 360px;
+    background-color: rgb(165, 128, 199);
+}
+.navigation li{
+    display: block;
+}

@@ -1,0 +1,24 @@
+.skillsBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightcoral;
+    outline: 1px solid;
+}
+.title{
+    background-color:lavender;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lawngreen;
+    outline: 1px solid ;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1049px) {
+    .skills{ justify-content: center;}
+ }

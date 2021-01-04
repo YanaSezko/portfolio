@@ -1,0 +1,23 @@
+.projectsBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(214, 128, 240);
+    outline: 1px solid;
+}
+.title{
+    background-color:lavender;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lawngreen;
+    outline: 1px solid ;
+    flex-wrap: wrap;
+}
+@media (max-width: 1049px) {
+    .projects{ justify-content: center;}
+ }
