@@ -6,10 +6,11 @@
     background-color: lightpink;
     outline: 1px solid;
     text-align: center;
+    margin: 15px;
 
 } 
 .imageWrapper{
-height: 200px;
+ height: 200px;
  width: 280px;
  display: flex;
  align-items: center;
