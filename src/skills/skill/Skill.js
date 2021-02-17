@@ -4,6 +4,7 @@ import style from './Skill.module.css';
 
 function Skill(props) {
   return (
+    <section id="skills">
     <div className={style.skill}>
       <div className={style.icon}></div>
       <h3>{props.title}</h3>
@@ -11,6 +12,7 @@ function Skill(props) {
         {props.description}
       </p>
     </div>
+    </section>
   );
 }
 

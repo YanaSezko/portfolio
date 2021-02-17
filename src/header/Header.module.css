@@ -2,11 +2,8 @@
     display: flex;
     align-items: center;
     justify-content:center;
-    height: 80px;
-    background-color: rgb(88, 64, 64);
-    color: beige;
-    outline: 1px solid;
-    margin-bottom: 15px;
-    padding: 15px;
+    color: #ffffff;
+    outline: 1px solid #fff;
+    background-color: #333;
 }
 

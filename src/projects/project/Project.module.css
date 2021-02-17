@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 280px;
+    width: 230px;
     background-color: lightpink;
     outline: 1px solid;
     text-align: center;
@@ -11,7 +11,7 @@
 } 
 .imageWrapper{
  height: 200px;
- width: 280px;
+ width: 230px;
  display: flex;
  align-items: center;
  justify-content: center;
