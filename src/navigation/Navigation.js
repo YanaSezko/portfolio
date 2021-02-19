@@ -8,7 +8,6 @@ function Navigation() {
       <li><AnchorLink href="#main">main</AnchorLink></li>
       <li><AnchorLink href="#skills">skills</AnchorLink></li>
       <li><AnchorLink href="#projects">projects</AnchorLink></li>
-      <li><AnchorLink href="#hire">hire</AnchorLink></li>
       <li><AnchorLink href="#contacts">contacts</AnchorLink></li>
     </ul>
 

@@ -1,6 +1,14 @@
-.hire{
-outline: 1px solid;
-text-align: center;
-margin-bottom: 15px;
-padding: 15px;
+.hire {
+    margin: 0;
+    text-align: center;
+}
+
+.title {
+    color: #222222;
+    margin: 0 0 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
 }

@@ -6,7 +6,6 @@ import Header from './header/Header';
 import Main from './main/Main';
 import Projects from './projects/Projects';
 import Skills from './skills/Skills';
-import Hire from './toHire/Hire';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Main/>
       <Skills />
       <Projects />
-      <Hire />
       <Contacts/>
     {/* <Route path="/main" component={Main}/>
     <Route path="/skills" component={Skills}/>

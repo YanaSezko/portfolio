@@ -1,0 +1,22 @@
+@import './../common/styles/sass/variables.scss';
+
+.projectsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $bgSecondColor;
+    outline: 1px solid;
+
+    .projects {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media (max-width: 1049px) {
+            justify-content: center;
+        }
+    }
+}

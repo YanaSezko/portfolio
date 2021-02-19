@@ -1,0 +1,82 @@
+@import './../../common/styles/sass/variables.scss';
+@import './../../common/styles/sass/mixins.scss';
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    background-color:$bgSecondColor;
+    outline: 1px solid;
+    text-align: center;
+    margin: 0 10px 10px;
+
+    .imageWrapper {
+        position: relative;
+        height: 200px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: 1px solid;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.5;
+        }
+
+        & a {
+            display: block;
+            color: #ffffff;
+            border: 1px solid #222;
+            background: #222;
+            z-index: 1000;
+            cursor: pointer;
+            letter-spacing: 2px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            line-height: 17px;
+
+            &:hover{
+                background: $primaryColor;
+            }
+        }
+
+
+
+    }
+
+    .projectInfo {
+        padding: 20px;
+
+        .projectTitle {
+          /*   font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: $textSecondColor;
+             */
+            @include text($titleFontFamily, 15px, 600);
+
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0 0 25px;
+        }
+
+        .projectDescription {
+            @include text($textFontFamily, 14px, 300);
+                       
+            line-height: 26px;
+            margin: 0 0 10px;
+        }
+
+    }
+
+}

@@ -4,14 +4,15 @@ import style from './Skill.module.css';
 
 function Skill(props) {
   return (
-    <section id="skills">
-    <div className={style.skill}>
+    <section className={style.skill}>
+
       <div className={style.icon}></div>
-      <h3>{props.title}</h3>
-      <p className={style.description}>
-        {props.description}
-      </p>
-    </div>
+
+      <div className={style.skillInfo}>
+        <h4 className={style.skillTitle}>{props.title}</h4>
+        <p className={style.description}>{props.description}</p>
+      </div>
+
     </section>
   );
 }
