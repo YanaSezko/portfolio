@@ -6,7 +6,7 @@ function Hire() {
     <section id="hire">
       <div className={style.hire}>
         <h3 className={style.title}>Рассматриваю варианты <br/> удаленной работы</h3>
-        <button>Нанять меня</button>
+        <button className={style.hireMe}>Нанять меня</button>
       </div>
     </section>
   );

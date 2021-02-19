@@ -16,7 +16,7 @@ function Contacts() {
             <input type='text'></input>
             <input type='text'></input>
             <textarea></textarea>
-            <button type="submit">Отправить</button>
+            <button className={style.sendBtn} type="submit">Отправить</button>
           </form>
         </div>
       </div>

@@ -9,16 +9,15 @@ function Skills() {
     <div  id="skills" className={`${style.skillsBlock} ${s.container}`}>
       <Title title = 'Skills' /> 
     <div className={style.skills}>
-    
       <Skill  title={'JS'} description={'Donec quam felis, ultricies nec'}/>
       <Skill  title={'CSS'} description={'Donec quam felis, ultricies nec'}/>
       <Skill  title={'React'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
-      <Skill  title={'React'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
-      <Skill  title={'JS'} description={'Donec quam felis, ultricies nec, pellentesque'}/>
-      <Skill  title={'React'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
+      <Skill  title={'Redux'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
+      <Skill  title={'TipeScript'} description={'Donec quam felis, ultricies nec, pellentesque'}/>
+      <Skill  title={'GIT'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
     </div>
     </div>
-    );
+    );  
 }
 
 export default Skills;
