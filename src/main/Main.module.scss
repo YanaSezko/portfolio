@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+    .info {
+        padding: 15px;
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.3);
+        h1{
+            font-size: 60px;
+            color:#222;
+            text-align:center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        span{
+            color:#b46e3c;
+        }
+    }
+}
+
+.photo {
+    width: 280px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 700px) {
+    .main {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

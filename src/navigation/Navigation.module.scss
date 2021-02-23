@@ -1,0 +1,47 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+    color: #ffffff;
+  
+    & li {
+        list-style: none;
+    }
+
+    & a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.9);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        padding: 20px;
+        height: 100%;
+
+        &:focus,
+        &:hover {
+            background-color: #b46e3c;
+        }
+
+        @media (max-width: 700px) {
+            .navigation a {
+                padding: 8px;
+            }
+        }
+    }
+}
+.btnUpp{
+    text-align: center;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #b46e3c;
+    color: #fff;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+}
