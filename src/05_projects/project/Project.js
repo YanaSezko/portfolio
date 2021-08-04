@@ -5,7 +5,7 @@ function Project(props) {
   return (
     <div className={style.project}>
       <div style={props.style} className={style.imageWrapper}>
-        <a>Смотреть</a>
+        <a target='_blank' href={props.src}>watch</a>
       </div>
       <div className={style.projectInfo}>
         <h4 className={style.projectTitle}>{props.title}</h4>

@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Skills.module.scss';
 import s from './../common/styles/container.module.css'
 import Skill from './skill/Skill';
-import Title from './../common/components/title/Title'
+import Title from '../common/components/title/Title'
 
 function Skills() {
   return (
@@ -13,7 +13,7 @@ function Skills() {
       <Skill  title={'CSS'} description={'Donec quam felis, ultricies nec'}/>
       <Skill  title={'React'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
       <Skill  title={'Redux'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
-      <Skill  title={'TipeScript'} description={'Donec quam felis, ultricies nec, pellentesque'}/>
+      <Skill  title={'TypeScript'} description={'Donec quam felis, ultricies nec, pellentesque'}/>
       <Skill  title={'GIT'} description={'Donec quam felis, ultricies nec, pellentesque eu'}/>
     </div>
     </div>

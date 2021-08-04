@@ -1,26 +1,24 @@
 import React from 'react'
 import './App.css';
-import Contacts from './contacts/Contacts';
-import Footer from './footer/Footer';
-import Header from './header/Header';
-import Main from './main/Main';
-import Projects from './projects/Projects';
-import Skills from './skills/Skills';
+import Contacts from './06_contacts/Contacts';
+import Footer from './07_footer/Footer';
+import Header from './01_header/Header';
+import Main from './03_main/Main';
+import Projects from './05_projects/Projects';
+import Skills from './04_skills/Skills';
 
 function App() {
   return (
-  <>
-    <div className='App'>
-      <Header/>
-      <Main/>
-      <Skills />
-      <Projects />
-      <Contacts/>
-      <Footer />
-    </div>
-
-    
-  </>
+    <>
+      <div className='App'>
+        <Header />
+        <Main />
+        <Skills />
+        <Projects />
+        <Contacts />
+        <Footer />
+      </div>
+    </>
   );
 }
 

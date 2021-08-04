@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+    .info {
+        padding: 15px;
+        width: 280px;
+        background-color: rgba(255, 255, 255, 0.3);
+
+        h1 {
+            font-size: 60px;
+            color: #222;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        span {
+            color: #b46e3c;
+        }
+    }
+}
+
+.photo {
+    width: 350px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 5s linear infinite both;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 50px -4px #b46e3c;;
+    -moz-box-shadow: 0px 0px 50px -4px #b46e3c;;
+    box-shadow: 0px 0px 50px -4px #b46e3c;;
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-20px, 20px);
+        transform: translate(-20px, 20px);
+    }
+    40% {
+        -webkit-transform: translate(-20px, -20px);
+        transform: translate(-20px, -20px);
+    }
+    60% {
+        -webkit-transform: translate(20px, 20px);
+        transform: translate(20px, 20px);
+    }
+    80% {
+        -webkit-transform: translate(20px, -20px);
+        transform: translate(20px, -20px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    20% {
+        -webkit-transform: translate(-20px, 20px);
+        transform: translate(-20px, 20px);
+    }
+    40% {
+        -webkit-transform: translate(-20px, -20px);
+        transform: translate(-20px, -20px);
+    }
+    60% {
+        -webkit-transform: translate(20px, 20px);
+        transform: translate(20px, 20px);
+    }
+    80% {
+        -webkit-transform: translate(20px, -20px);
+        transform: translate(20px, -20px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    .info {
+        margin: 10px 0;
+    }
+    .photo {
+        margin-bottom: 10px;
+    }
+}
