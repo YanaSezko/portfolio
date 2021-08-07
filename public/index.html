@@ -48,25 +48,23 @@
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('form');
       form.addEventListener('submit', formSend);
+
       async function formSend(e) {
-        e.preventDefault();
-
-        let formData = new FormData(form);
-        let response = await fetch('mail.php', {
-          method: 'POST',
-          body: formData
-        });
+        e.preventDefault()
+        let formData = new FormData(form)
+        let response = await fetch('sendmail.php', {
+            method: 'POST',
+            body: formData
+        })
         if (response.ok) {
-          let result = await response.json();
-          alert(result.message);
-          form.reset();
-        } else {
-          alert('error')
+            let result = await response.json();
+            alert(result.message);
+            form.reset();
+            alert('Заявка успешно оставлена!')
+            modalHide()
         }
-
+        else alert('Error')
       }
-
-
     });
   </script>
 </body>

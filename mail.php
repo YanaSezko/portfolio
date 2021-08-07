@@ -1,41 +1,36 @@
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+//     use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+    require 'phpmailer/src/Exception.php';
+    require 'phpmailer/src/PHPMailer.php';
 
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
+    $mail = new PHPMailer(true);
+//     $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
-$mail = new PHPMailer(true);
-$mail->CharSet = 'UTF-8';
-$mail->setLanguage('ru', 'phpmailer/language');
-$mail->isHTML(true);
+//     $mail->isSMTP();
+    $mail->CharSet = 'UTF-8';
+    $mail->setLanguage('ru', 'phpmailer/language/');
+    $mail->IsHTML(true);
+    $mail->setFrom('sezko.yana@gmail.com', 'Yana');
+    $mail->addAddress('sezko.dev@gmail.com', 'Яна');
+//     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+//     $mail->Port       = 465;
+    $mail->Subject = 'Привет! Это твоё первое сообщение';
+    $body = '<h1>First Message</h1>';
+    $body.='<p>Имя:'.$_POST['name'].'</p>';
+    $body.='<p>E-mail:'.$_POST['email'].'</p>';
+    $body.='<p>Message:'.$_POST['message'].'</p>';
 
-$mail->setFrom('test@hostinger.com', 'Mr. Drago');
-$mail->addAddress('sezko.dev@gmail.com');
-$mail->Subject = 'Привет, это мое письмо';
+    $mail->Body = $body;
 
-$body = '<h1>Встречай письмо</h1>';
-if (trim(!empty($_POST['name']))) {
-    $body .= '<p><strong>Имя:</strong>' . $_POST['name'] . '</p>';
-}
-if (trim(!empty($_POST['email']))) {
-    $body .= '<p><strong>E-mail:</strong>' . $_POST['email'] . '</p>';
-}
-if (trim(!empty($_POST['message']))) {
-    $body .= '<p><strong>Сообщение:</strong>' . $_POST['message'] . '</p>';
-}
-
-$mail->Body = $body;
-
-if (!$mail->send()) {
-    $message = 'ошибка';
-} else {
-    $message = 'данные отправлены';
-}
-
-$response = ['message' => $message];
-header('Content-type: application/json');
-echo json_encode($response);
-
+    if (!$mail->Send()) {
+        $message = 'Error';
+    } else {
+        $message = 'Данные отправлены!';
+    }
+    $response = ['Message' => $message];
+    header('Content-type: application/json');
+    echo json_encode($response);
 ?>

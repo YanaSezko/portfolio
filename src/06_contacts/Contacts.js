@@ -13,9 +13,9 @@ function Contacts() {
           <span> &#128383;+38(066)972-18-78</span><br />
         </div>
         <form method="POST" action="#" id="form" className={styles.contactsForm}>
-          <input className={styles.req} type='text' placeholder={"Your Name"}></input>
-          <input className={styles.req} type='text' placeholder={"Your Email"}></input>
-          <textarea className={styles.req} placeholder={"Your Message"}></textarea>
+          <input name="name" className={styles.req} type='text' placeholder={"Your Name"}></input>
+          <input name="email" className={styles.req} type='text' placeholder={"Your Email"}></input>
+          <textarea name="message" className={styles.req} placeholder={"Your Message"}></textarea>
           <button className={styles.sendBtn} type="submit">Send</button>
         </form>
       </div>
