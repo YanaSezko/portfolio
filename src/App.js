@@ -13,7 +13,7 @@ function App() {
     <>
       <div className='App'>
         <Header />
-        <div style={{ backgroundImage: `url(${background})` }}>
+        <div style={{ backgroundImage: `url(${background})`}}>
           <Main />
           <Skills />
           <Projects />
