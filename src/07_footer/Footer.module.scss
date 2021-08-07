@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    outline: 1px solid #b46e3c;
+    border-top: 1px solid #b46e3c;
 
     .socialIconsList {
         display: flex;
@@ -18,7 +18,7 @@
             border-radius: 50%;
             background-color: #b46e3c;
             opacity: 0.5;
-            padding: 8px;
+            padding: 9px;
             text-align: center;
             margin: 5px;
             color: #222;

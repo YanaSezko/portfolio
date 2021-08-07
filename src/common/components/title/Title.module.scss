@@ -1,12 +1,12 @@
-@import './../../styles/sass/variables.scss';
-.title h2{
-    color:$primaryColor;
+@import "./../../styles/sass/variables.scss";
+.title h2 {
+    color: $primaryColor;
     position: relative;
     padding: 0 0 30px 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
-    margin:10px 0 40px 0;
-    &::before{
+    margin: 10px 0 40px 0;
+    &::before {
         content: "";
         position: absolute;
         width: 10px;
@@ -19,17 +19,14 @@
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-    
     }
-    &::after{
+    &::after {
         content: "";
         position: absolute;
         width: 150px;
         border-bottom: 1px solid $primaryColor;
         left: 50%;
         bottom: 10px;
-        transform:translate(-50%,50%);
+        transform: translate(-50%, 50%);
     }
-    
 }
-

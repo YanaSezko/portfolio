@@ -1,7 +1,7 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-@mixin text($fontFamily,$fontSize, $fontWeight){
-    font-family: $fontFamily; 
+@mixin text($fontFamily, $fontSize, $fontWeight) {
+    font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $fontWeight;
     color: $textSecondColor;

@@ -9,28 +9,28 @@ function Footer() {
     <div className={styles.footerBlock}>
       <ul className={styles.socialIconsList}>
         <li>
-          <a>
-          <FontAwesomeIcon icon={faGithub} />
+          <a rel='noopener noreferrer' target='_blank' href={"https://github.com/YanaSezko"}>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a rel='noopener noreferrer' target='_blank' href={"https://www.linkedin.com/in/yana-sezko-034611151/"}>
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
         <li>
-          <a>
-          <FontAwesomeIcon icon={faTelegram} />
+          <a rel='noopener noreferrer' target='_blank' href={"https://t.me/YanaSezko"}>
+            <FontAwesomeIcon icon={faTelegram} />
           </a>
         </li>
         <li>
-          <a>
-          <FontAwesomeIcon icon={faFacebook} />
+          <a rel='noopener noreferrer' target='_blank' href={"https://www.facebook.com/profile.php?id=100031114026734"}>
+            <FontAwesomeIcon icon={faFacebook} />
           </a>
         </li>
-       
+
       </ul>
-     <Title title={'Yana Sezko'} />
+      <Title title={'Yana Sezko'} />
     </div>
   );
 }

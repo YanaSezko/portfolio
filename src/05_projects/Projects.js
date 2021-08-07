@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Projects.module.scss';
+import styles from './Projects.module.scss';
 import s from './../common/styles/container.module.css'
 import Project from './project/Project';
 import Title from '../common/components/title/Title'
@@ -21,12 +21,11 @@ function Projects() {
 
   };
 
-
   return (
     <section id='projects'>
-      <div className={`${style.projectsBlock} ${s.container}`}>
+      <div className={`${styles.projectsBlock} ${s.container}`}>
         <Title title='Projects' />
-        <div className={style.projects}>
+        <div className={styles.projects}>
           <Project style={social} src={'https://yanasezko.github.io/react-homeworks/'} title={'Project_1'} description={'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'} />
           <Project style={todolist} title={'Project_2'} description={'Donec quam felis, ultricies nec, pellentesque eu'} />
           <Project style={counter} title={'Project_3'} description={'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem, pellentesque eu, pretium quis, sem.'} />

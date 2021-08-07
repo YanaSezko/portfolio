@@ -49,6 +49,7 @@
     text-decoration: none;
     padding: 8px;
     transition: all 0.4s;
+    z-index: 1001;
 
     &:hover {
         opacity: 1;
