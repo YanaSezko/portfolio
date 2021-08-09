@@ -21,7 +21,7 @@
     $body = '<h1>First Message</h1>';
     $body.='<p>Имя:'.$_POST['name'].'</p>';
     $body.='<p>E-mail:'.$_POST['email'].'</p>';
-    $body.='<p>Message:'.$_POST['message'].'</p>';
+    $body.='<p>Message:'.$_POST['text'].'</p>';
 
     $mail->Body = $body;
 
