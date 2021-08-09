@@ -26,9 +26,10 @@ function Projects() {
       <div className={`${styles.projectsBlock} ${s.container}`}>
         <Title title='Projects' />
         <div className={styles.projects}>
-          <Project style={social} src={'https://yanasezko.github.io/react-homeworks/'} title={'Project_1'} description={'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.'} />
-          <Project style={todolist} title={'Project_2'} description={'Donec quam felis, ultricies nec, pellentesque eu'} />
-          <Project style={counter} title={'Project_3'} description={'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem, pellentesque eu, pretium quis, sem.'} />
+          <Project style={todolist} src={'https://eco-cos.com/'} title={'Eco_Cosmetics'} description={'Магазин на WordPress'} />
+          <Project style={social} src={'https://yanasezko.github.io/OrganicSoap/'} title={'Organic_Soap'} description={'JavaScript 91.7%; CSS 5.3%; HTML 3.0%'} />
+          <Project style={counter} src={'https://yanasezko.github.io/WeatherApp/'} title={'Weather_App'} description={'JavaScript 38.0%; HTML 31.6%; CSS 30.4%'} />
+          <Project style={counter} src={'https://yanasezko.github.io/orthodox-alendar/'} title={'Orthodox_Calendar'} description={'HTML 46.1%; JavaScript 36.3%; CSS 17.6%'} />
         </div>
       </div>
     </section>

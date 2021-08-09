@@ -13,7 +13,7 @@ function Contacts() {
       }, (error) => {
         console.log(error.text);
       });
-      alert('Ваше сообщение отправлено')
+    alert('Ваше сообщение отправлено')
     e.target.reset()
   }
 
