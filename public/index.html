@@ -44,29 +44,21 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <script src="../main.js">
-   /*  "use strict";
-    document.addEventListener('DOMContentLoaded', function () {
-
-      form.addEventListener('submit', formSend);
-
-      async function formSend(e) {
-        e.preventDefault()
-        const form = new FormData(document.getElementById('form'));
-        let response = fetch('mail.php', {
-          method: 'POST',
-          body: form
-        })
-        debugger
-        if (response.ok) {
-          let result = await response.json();
-          alert(result.message);
-          form.reset();
-          alert('Сообщение успешно отправлено!')
-        }
-        else alert('Error')
-      }
-    }); */
+  <script>
+    $(document).ready(function () {
+      $("#form").submit(function () {
+        $.ajax({
+          type: "POST",
+          url: "mail2.php",
+          data: $(this).serialize()
+        }).done(function () {
+          $(this).find("input").val("");
+          alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+          $("#form").trigger("reset");
+        });
+        return false;
+      });
+    });
   </script>
 </body>
 
