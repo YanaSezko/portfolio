@@ -31,7 +31,7 @@ function Main() {
       <div className={`${styles.main} ${s.container}`}>
         <div className={styles.info}>
           <span>Hi There</span>
-          <h1>I am <span>Yana Sezko</span></h1>
+          <h1>I am <span>Яна Сезько</span></h1>
           <p>Frontend Developer</p>
         </div>
         <div className={styles.photo}>
